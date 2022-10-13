@@ -49,7 +49,7 @@ public class Veterinaria
     }
     
     public void venderAnimal(Animal p_animal) {
-        
+        if()
     }
     
     public double recaudacion() {

@@ -49,19 +49,32 @@ public class Veterinaria
     }
     
     public void venderAnimal(Animal p_animal) {
-        if()
+        if(this.getAnimales().isEmpty()) {
+            System.out.println("No hay animales");
+        }else {
+            int index = this.getAnimales().indexOf(p_animal);
+            Animal animal = this.getAnimales().get(index);
+            animal.vender();
+        }
     }
     
     public double recaudacion() {
-    
+        double recaudado = 0;
+        for(Animal animal : animales) {
+            if(animal.getEstado() == "Vendido") {
+                recaudado += animal.precioVenta();
+            }
+        }
+        return recaudado;
     }
     
     public void verAnimales(String p_estado) {
-        
-    }
-    
-    public void listarAnimalesDelTipo(String p_tipo) {
-    
+        System.out.println("*****Animales "+ p_estado + " de "+ this.getNombre());
+        for(Animal animal : animales) {
+            if(animal.getEstado() == p_estado) {
+                animal.mostrar();
+            }
+        }
     }
     
 }

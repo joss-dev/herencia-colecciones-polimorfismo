@@ -10,7 +10,7 @@ import java.util.*;
 public class Veterinaria
 {
     private String nombre;
-    private <Animal> ArrayList animales;
+    private ArrayList <Animal> animales;
     
     
     //getters
@@ -21,7 +21,22 @@ public class Veterinaria
     public ArrayList <Animal> getAnimales() {
         return this.animales;
     }
-    public boolean ingresarAnimal(Animal p_animal) {
-            
+    
+    //setters
+    private void setNombre(String p_nombre) {
+        this.nombre = p_nombre;
     }
+    
+    private void setAnimales(ArrayList <Animal> p_animales) {
+        this.animales = p_animales;
+    }
+    
+    
+    //metodos
+    
+    public boolean ingresarAnimal(Animal p_animal) {
+        return this.getAnimales().add(p_animal);
+    }
+    
+    public boolean 
 }

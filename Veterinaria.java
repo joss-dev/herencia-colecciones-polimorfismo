@@ -12,6 +12,16 @@ public class Veterinaria
     private String nombre;
     private ArrayList <Animal> animales;
     
+    public Veterinaria(String p_nombre) {
+        this.setNombre(p_nombre);
+        this.setAnimales(new ArrayList <Animal>());
+    }
+    
+    public Veterinaria(String p_nombre, ArrayList <Animal> p_animales) {
+        this.setNombre(p_nombre);
+        this.setAnimales(p_animales);
+    }
+    
     
     //getters
     public String getNombre() {
@@ -38,5 +48,20 @@ public class Veterinaria
         return this.getAnimales().add(p_animal);
     }
     
-    public boolean 
+    public void venderAnimal(Animal p_animal) {
+        
+    }
+    
+    public double recaudacion() {
+    
+    }
+    
+    public void verAnimales(String p_estado) {
+        
+    }
+    
+    public void listarAnimalesDelTipo(String p_tipo) {
+    
+    }
+    
 }

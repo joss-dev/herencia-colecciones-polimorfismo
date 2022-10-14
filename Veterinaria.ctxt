@@ -1,0 +1,23 @@
+#BlueJ class context
+comment0.target=Veterinaria
+comment1.params=p_nombre
+comment1.target=Veterinaria(java.lang.String)
+comment10.params=p_estado
+comment10.target=void\ verAnimales(java.lang.String)
+comment2.params=p_nombre\ p_animales
+comment2.target=Veterinaria(java.lang.String,\ java.util.ArrayList)
+comment3.params=
+comment3.target=java.lang.String\ getNombre()
+comment4.params=
+comment4.target=java.util.ArrayList\ getAnimales()
+comment5.params=p_nombre
+comment5.target=void\ setNombre(java.lang.String)
+comment6.params=p_animales
+comment6.target=void\ setAnimales(java.util.ArrayList)
+comment7.params=p_animal
+comment7.target=boolean\ ingresarAnimal(Animal)
+comment8.params=p_animal
+comment8.target=void\ venderAnimal(Animal)
+comment9.params=
+comment9.target=double\ recaudacion()
+numComments=11
